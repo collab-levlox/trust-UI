@@ -353,43 +353,43 @@ React.useEffect(() => {      //abt-us tab section
 
 React.useEffect(() => {
   // Initialize Swiper for .what-we-do-slider
-  if (document.querySelector(".what-we-do-slider")) {
-    new Swiper(".what-we-do-slider", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        1200: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-        992: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        576: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        0: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-      },
-    });
-  }
+  // if (document.querySelector(".what-we-do-slider")) {
+  //   new Swiper(".what-we-do-slider", {
+  //     slidesPerView: 3,
+  //     spaceBetween: 30,
+  //     loop: true,
+  //     pagination: {
+  //       el: ".swiper-pagination",
+  //       clickable: true,
+  //     },
+  //     autoplay: {
+  //       delay: 3000,
+  //       disableOnInteraction: false,
+  //     },
+  //     navigation: {
+  //       nextEl: ".swiper-button-next",
+  //       prevEl: ".swiper-button-prev",
+  //     },
+  //     breakpoints: {
+  //       1200: {
+  //         slidesPerView: 3,
+  //         spaceBetween: 30,
+  //       },
+  //       992: {
+  //         slidesPerView: 2,
+  //         spaceBetween: 20,
+  //       },
+  //       576: {
+  //         slidesPerView: 1,
+  //         spaceBetween: 10,
+  //       },
+  //       0: {
+  //         slidesPerView: 1,
+  //         spaceBetween: 10,
+  //       },
+  //     },
+  //   });
+  // }
 }, []);
 
 
