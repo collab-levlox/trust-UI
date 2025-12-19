@@ -8,6 +8,46 @@ import UpiPayment from "./Payment";
 // import Swiper from 'swiper';
 import { Link } from "react-router-dom";
 
+// image imports used in this file
+import logoJpg from "../assets/img/logo/Annamalai12  1.jpg";
+import logoPng from "../assets/img/logo/Annamalai12 1.png";
+import logoCopy from "../assets/img/logo/Annamalai12  1 - Copy.jpg";
+import icon1 from "../assets/img/icons/icon-1.svg";
+import author1 from "../assets/img/authors/author-1.webp";
+import groupShape1 from "../assets/img/shapes/group-shape-1.webp";
+import shape2 from "../assets/img/shapes/shape-2.webp";
+import frame106 from "../assets/img/thumbs/Frame 106.jpg";
+import frame107 from "../assets/img/thumbs/Frame 107.jpg";
+import frame108 from "../assets/img/thumbs/Frame 108.jpg";
+import shape10 from "../assets/img/shapes/shape-10.webp";
+import shape11 from "../assets/img/shapes/shape-11.webp";
+import aboutShape1 from "../assets/images/shapes/about-three-shape-1.png";
+import aboutShape2 from "../assets/images/shapes/about-three-shape-2.png";
+import aboutPerumal from "../assets/img/abt-us perumalannamalai.jpg";
+import thumb14 from "../assets/img/thumbs/thumb-14.webp";
+import thumb15 from "../assets/img/thumbs/thumb-15.webp";
+import thumb16 from "../assets/img/thumbs/thumb-16.webp";
+import thumb84 from "../assets/img/thumbs/thumb-84.webp";
+import team1 from "../assets/team/team-1.webp";
+import team2 from "../assets/team/team-2.webp";
+import team3 from "../assets/team/team-3.webp";
+import team4 from "../assets/team/team-4.webp";
+import team5 from "../assets/team/team-5.webp";
+import event1 from "../assets/img/event-1.jpg";
+import event2 from "../assets/img/event-2.jpg";
+import event3 from "../assets/img/event-3.jpg";
+import gallery1 from "../assets/img/gallery/img-1.jpg";
+import gallery2 from "../assets/img/gallery/img-2.jpg";
+import gallery3 from "../assets/img/gallery/img-3.jpg";
+import gallery4 from "../assets/img/gallery/img-4.jpg";
+import gallery5 from "../assets/img/gallery/img-5.jpg";
+import gallery6 from "../assets/img/gallery/img-6.jpg";
+import gallery7 from "../assets/img/gallery/img-7.jpg";
+import gallery8 from "../assets/img/gallery/img-8.jpg";
+import footerLogo from "../assets/img/thumbs/Annamalai_logo.jpg";
+import icon12 from "../assets/img/icons/icon-12.svg";
+import shape38 from "../assets/img/shapes/shape-38.webp";
+
 function Home() {
 // Sticky header with transition effect
 React.useEffect(() => {
@@ -654,14 +694,14 @@ useEffect(() => {
 
   <div className="logo d-none d-sm-none d-md-none d-lg-block d-xl-block"
     style={{ position: "absolute", zIndex: 999, top: 0 }}>
-    <Link to="/"><img src="/src/assets/img/logo/Annamalai12  1.jpg" alt="logo" /></Link>
+  <Link to="/"><img src={logoJpg} alt="logo" /></Link>
   </div>
 
   <div className="header-bottom-layout-2">
 
     <div className="header-left">
       <div className="logo-wrap-2">
-        <Link to="/"><img src="/src/assets/img/logo/Annamalai12 1.png" alt="logo" /></Link>
+  <Link to="/"><img src={logoPng} alt="logo" /></Link>
       </div>
     </div>
 
@@ -739,14 +779,14 @@ useEffect(() => {
   <div
     className="logo d-none d-sm-none d-md-none d-lg-block d-xl-block"
     style={{ position: "absolute", zIndex: 999, top: 0 }}>
-    <Link to="/"><img src="/src/assets/img/logo/Annamalai12  1 - Copy.jpg" alt="logo" /></Link>
+  <Link to="/"><img src={logoCopy} alt="logo" /></Link>
   </div>
 
   <div className="header-bottom-layout-2">
 
     <div className="header-left">
       <div className="logo-wrap-2">
-        <Link to="/"><img src="/src/assets/img/logo/Annamalai12 1.png" alt="logo" /></Link>
+  <Link to="/"><img src={logoPng} alt="logo" /></Link>
       </div>
     </div>
 
@@ -805,9 +845,9 @@ useEffect(() => {
 	<div className="off-canvas-menubar-body">
 		<div className="off-canvas-head">
 			<div className="off-canvas-logo">
-				<Link to="/">
-					<img src="/src/assets/img/logo/Annamalai12 1.png" alt="logo"/>
-				</Link>
+          <Link to="/">
+            <img src={logoPng} alt="logo"/>
+          </Link>
 			</div>
 			<div className="off-canvas-menubar-close" data-close="menubar">
 				<i className="fa fa-xmark"></i>
@@ -880,7 +920,7 @@ DONATE NOW
                           data-animation="animate__fadeInUp"
                           data-delay="0.3s"
                         >
-                          <img src="/src/assets/img/icons/icon-1.svg" alt="icon-1" />
+                          <img src={icon1} alt="icon-1" />
                           <span>Let's Go Save Environment</span>
                         </div>
 
@@ -926,7 +966,7 @@ DONATE NOW
 
                           <div className="author-wrap">
                             <img
-                              src="/src/assets/img/authors/author-1.webp"
+                              src={author1}
                               alt="authors"
                             />
                             <div className="author-info">
@@ -941,10 +981,10 @@ DONATE NOW
                 </div>
 
                 <div className="group-shape-1">
-                  <img src="assets/img/shapes/group-shape-1.webp" alt="group-shape-1" />
+                  <img src={groupShape1} alt="group-shape-1" />
                 </div>
                 <div className="s-shape-1">
-                  <img src="assets/img/shapes/shape-2.webp" alt="s-shape-1" />
+                  <img src={shape2} alt="s-shape-1" />
                 </div>
               </div>
             </div>
@@ -964,7 +1004,7 @@ DONATE NOW
                           data-animation="animate__fadeInUp"
                           data-delay="0.3s"
                         >
-                          <img src="/src/assets/img/icons/icon-1.svg" alt="icon-1" />
+                          <img src={icon1} alt="icon-1" />
                           <span>Let’s Act for Nature’s Future</span>
                         </div>
 
@@ -1010,7 +1050,7 @@ DONATE NOW
 
                           <div className="author-wrap">
                             <img
-                              src="/src/assets/img/authors/author-1.webp"
+                              src={author1}
                               alt="authors"
                             />
                             <div className="author-info">
@@ -1025,10 +1065,10 @@ DONATE NOW
                 </div>
 
                 <div className="group-shape-1">
-                  <img src="assets/img/shapes/group-shape-1.webp" alt="group-shape-1" />
+                  <img src={groupShape1} alt="group-shape-1" />
                 </div>
                 <div className="s-shape-1">
-                  <img src="assets/img/shapes/shape-2.webp" alt="s-shape-1" />
+                  <img src={shape2} alt="s-shape-1" />
                 </div>
               </div>
             </div>
@@ -1048,7 +1088,7 @@ DONATE NOW
                           data-animation="animate__fadeInUp"
                           data-delay="0.3s"
                         >
-                          <img src="/src/assets/img/icons/icon-1.svg" alt="icon-1" />
+                          <img src={icon1} alt="icon-1" />
                           <span>Let's Go Save Environment</span>
                         </div>
 
@@ -1094,7 +1134,7 @@ DONATE NOW
 
                           <div className="author-wrap">
                             <img
-                              src="/src/assets/img/authors/author-1.webp"
+                              src={author1}
                               alt="authors"
                             />
                             <div className="author-info">
@@ -1109,10 +1149,10 @@ DONATE NOW
                 </div>
 
                 <div className="group-shape-1">
-                  <img src="assets/img/shapes/group-shape-1.webp" alt="group-shape-1" />
+                  <img src={groupShape1} alt="group-shape-1" />
                 </div>
                 <div className="s-shape-1">
-                  <img src="assets/img/shapes/shape-2.webp" alt="s-shape-1" />
+                  <img src={shape2} alt="s-shape-1" />
                 </div>
               </div>
             </div>
@@ -1130,7 +1170,7 @@ DONATE NOW
                           data-animation="animate__fadeInUp"
                           data-delay="0.3s"
                         >
-                          <img src="/src/assets/img/icons/icon-1.svg" alt="icon-1" />
+                          <img src={icon1} alt="icon-1" />
                           <span>Let’s Act for Nature’s Future</span>
                         </div>
 
@@ -1176,7 +1216,7 @@ DONATE NOW
 
                           <div className="author-wrap">
                             <img
-                              src="/src/assets/img/authors/author-1.webp"
+                              src={author1}
                               alt="authors"
                             />
                             <div className="author-info">
@@ -1191,10 +1231,10 @@ DONATE NOW
                 </div>
 
                 <div className="group-shape-1">
-                  <img src="assets/img/shapes/group-shape-1.webp" alt="group-shape-1" />
+                  <img src={groupShape1} alt="group-shape-1" />
                 </div>
                 <div className="s-shape-1">
-                  <img src="assets/img/shapes/shape-2.webp" alt="s-shape-1" />
+                  <img src={shape2} alt="s-shape-1" />
                 </div>
               </div>
             </div>
@@ -1282,7 +1322,7 @@ DONATE NOW
 		<div className="section-top-2">
 			<div className="left text-center">
 				<div className="common-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-					<img src="/src/assets/img/icons/icon-1.svg" alt="icon-1"/>
+            <img src={icon1} alt="icon-1"/>
 					<span>Why Us</span>
 				</div>
 				<div className="common-title text-center d-none d-sm-none d-md-none d-lg-block d-xl-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
@@ -1299,7 +1339,7 @@ DONATE NOW
 					<div className="thumb">
 						<a href='/econest/services-details'>
 							<div className="image-container">
-								<img src="/src/assets/img/thumbs/Frame 106.jpg" alt="thumb-14"/>
+                                <img src={frame106} alt="thumb-14"/>
 							</div>
 						</a>
 						<div className="content">
@@ -1324,7 +1364,7 @@ DONATE NOW
 					<div className="thumb">
 						<a href='/econest/services-details'>
 							<div className="image-container">
-								<img src="/src/assets/img/thumbs/Frame 107.jpg" alt="thumb-15"/>
+                                <img src={frame107} alt="thumb-15"/>
 							</div>
 						</a>
 						<div className="content">
@@ -1349,7 +1389,7 @@ DONATE NOW
 					<div className="thumb">
 						<a href='/econest/services-details'>
 							<div className="image-container">
-								<img src="/src/assets/img/thumbs/Frame 108.jpg" alt="thumb-16"/>
+                                <img src={frame108} alt="thumb-16"/>
 							</div>
 						</a>
 						<div className="content">
@@ -1374,19 +1414,19 @@ DONATE NOW
 
 	</div>
 	{/* <!-- <div className="shape-10">
-		<img src="assets/img/shapes/shape-10.webp" alt="shape-10"/>
+    <img src={shape10} alt="shape-10"/>
 	</div>
 	<div className="shape-11">
-		<img src="assets/img/shapes/shape-11.webp" alt="shape-11"/>
+    <img src={shape11} alt="shape-11"/>
 	</div> --> */}
       </section>
 
       <section className="about-three">
   <div className="about-three__shape-1 d-none d-sm-none d-md-none d-lg-block">
-    <img src="/src/assets/images/shapes/about-three-shape-1.png" alt="" />
+  <img src={aboutShape1} alt="" />
   </div>
   <div className="about-three__shape-2 d-none d-sm-none d-md-none d-lg-block">
-    <img src="/src/assets/images/shapes/about-three-shape-2.png" alt="" />
+  <img src={aboutShape2} alt="" />
   </div>
   <div className="container">
     <div className="row">
@@ -1498,7 +1538,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
       <div className="col-xl-5 col-md-5 wow fadeInRight" data-wow-delay=".3s">
         <div className="about-three__right">
           <div className="about-three__right-img">
-            <img src="/src/assets/img/abt-us perumalannamalai.jpg" alt="" />
+            <img src={aboutPerumal} alt="" />
             <div className="about-three__round-text-box">
               <div className="about-three__round-text-box-inner  rotate-me">
                 <div className="about-three__curved-circle">
@@ -1610,10 +1650,10 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
         <div className="container">
           <div className="section-top-2">
             <div className="left text-center">
-              <div className="common-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <img src="/src/assets/img/icons/icon-1.svg" alt="icon-1" />
-                <span>What We Do</span>
-              </div>
+        <div className="common-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <img src={icon1} alt="icon-1"/>
+          <span>Why Us</span>
+        </div>
               <div className="common-title text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                 <h2>Join a thriving community of researchers, innovators, and experts committed to advancing knowledge and creating meaningful impact.</h2>
               </div>
@@ -1629,7 +1669,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
                   <div className="thumb">
                     <a href="/econest/services-details">
                       <div className="image-container">
-                        <img src="/src/assets/img/thumbs/thumb-14.webp" alt="thumb-14" />
+                        <img src={thumb14} alt="thumb-14" />
                         <div className="overlay"></div>
                       </div>
                     </a>
@@ -1653,7 +1693,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
                   <div className="thumb">
                     <a href="/econest/services-details">
                       <div className="image-container">
-                        <img src="/src/assets/img/thumbs/thumb-15.webp" alt="thumb-15" />
+                        <img src={thumb15} alt="thumb-15" />
                         <div className="overlay"></div>
                       </div>
                     </a>
@@ -1677,7 +1717,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
                   <div className="thumb">
                     <a href="/econest/services-details">
                       <div className="image-container">
-                        <img src="/src/assets/img/thumbs/thumb-16.webp" alt="thumb-16" />
+                        <img src={thumb16} alt="thumb-16" />
                         <div className="overlay"></div>
                       </div>
                     </a>
@@ -1701,7 +1741,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
                   <div className="thumb">
                     <a href="/econest/services-details">
                       <div className="image-container">
-                        <img src="/src/assets/img/thumbs/thumb-15.webp" alt="thumb-17" />
+                        <img src={thumb15} alt="thumb-17" />
                         <div className="overlay"></div>
                       </div>
                     </a>
@@ -1724,7 +1764,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
                   <div className="thumb">
                     <a href="/econest/services-details">
                       <div className="image-container">
-                        <img src="/src/assets/img/thumbs/thumb-15.webp" alt="thumb-17" />
+                        <img src={thumb15} alt="thumb-17" />
                         <div className="overlay"></div>
                       </div>
                     </a>
@@ -1747,7 +1787,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
                   <div className="thumb">
                     <a href="/econest/services-details">
                       <div className="image-container">
-                        <img src="/src/assets/img/thumbs/thumb-15.webp" alt="thumb-17" />
+                        <img src={thumb15} alt="thumb-17" />
                         <div className="overlay"></div>
                       </div>
                     </a>
@@ -1774,8 +1814,8 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
         </div>
 
         {/* 
-        <div className="shape-10"><img src="assets/img/shapes/shape-10.webp" alt="shape-10" /></div>
-        <div className="shape-11"><img src="assets/img/shapes/shape-11.webp" alt="shape-11" /></div>
+  <div className="shape-10"><img src={shape10} alt="shape-10" /></div>
+  <div className="shape-11"><img src={shape11} alt="shape-11" /></div>
         */}
       </section>
 
@@ -1792,7 +1832,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
           <div className="team-card">
             <div className="p-2">
               <Link to="volunteerdetails">
-                <img src="/src/assets/team/team-1.webp" alt="Member 1" />
+                <img src={team1} alt="Member 1" />
               </Link>
               <h4>Padmashri Dr. Annadurai Mylswamy</h4>
               <p className="role">Former ISRO Director, India</p>
@@ -1802,7 +1842,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
           <div className="team-card">
             <div className="p-2">
               <Link to="volunteerdetails">
-                <img src="/src/assets/team/team-2.webp" alt="Member 2" />
+                <img src={team2} alt="Member 2" />
               </Link>
               <h4>Dr. Antony Jeevarajan</h4>
               <p className="role">
@@ -1814,7 +1854,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
           <div className="team-card">
             <div className="p-2">
               <Link to="volunteerdetails">
-                <img src="/src/assets/team/team-3.webp" alt="Member 3" />
+                <img src={team3} alt="Member 3" />
               </Link>
               <h4>Dr. Swati Mohan</h4>
               <p className="role">Aerospace engineer</p>
@@ -1824,7 +1864,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
           <div className="team-card">
             <div className="p-2">
               <Link to="volunteerdetails">
-                <img src="/src/assets/team/team-4.webp" alt="Member 4" />
+                <img src={team4} alt="Member 4" />
               </Link>
               <h4>Prof. Sultan Ahmed Ismail</h4>
               <p className="role">Member, TN State Commission</p>
@@ -1833,7 +1873,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
           <div className="team-card">
             <div className="p-2">
               <Link to="volunteerdetails">
-                <img src="/src/assets/team/team-5.webp" alt="Member 4" />
+                <img src={team5} alt="Member 4" />
               </Link>
               <h4>Prof. Na.Ganesan</h4>
               <p className="role">Director, NASA, USA</p>
@@ -1867,7 +1907,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
           {/* <!-- Card 1 --> */}
           <div className="event-card">
             <div className="event-img">
-              <img src="/src/assets/img/event-1.jpg" alt="AI Fest 2025" />
+              <img src={event1} alt="AI Fest 2025" />
               <div className="event-date">
                 <span className="day">20</span>
                 <span className="month">November</span>
@@ -1900,7 +1940,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
           {/* <!-- Card 2 --> */}
           <div className="event-card">
             <div className="event-img">
-              <img src="/src/assets/img/event-2.jpg" alt="AI Fest 2025" />
+              <img src={event2} alt="AI Fest 2025" />
               <div className="event-date">
                 <span className="day">20</span>
                 <span className="month">November</span>
@@ -1933,7 +1973,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
           {/* <!-- Card 3 --> */}
           <div className="event-card">
             <div className="event-img">
-              <img src="/src/assets/img/event-3.jpg" alt="AI Fest 2025" />
+              <img src={event3} alt="AI Fest 2025" />
               <div className="event-date">
                 <span className="day">20</span>
                 <span className="month">November</span>
@@ -1970,30 +2010,30 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
 
         <div className="gallery-grid">
           <div className="gallery-item">
-            <img src="/src//assets/img/gallery/img-1.jpg" alt="Event 1" />
+            <img src={gallery1} alt="Event 1" />
           </div>
           <div className="gallery-item">
-            <img src="/src//assets/img/gallery/img-2.jpg" alt="Event 2" />
+            <img src={gallery2} alt="Event 2" />
           </div>
           <div className="gallery-item">
-            <img src="/src//assets/img/gallery/img-3.jpg" alt="Event 3" />
+            <img src={gallery3} alt="Event 3" />
           </div>
           <div className="gallery-item">
-            <img src="/src//assets/img/gallery/img-4.jpg" alt="Event 4" />
+            <img src={gallery4} alt="Event 4" />
           </div>
           <div className="gallery-item">
-            <img src="/src//assets/img/gallery/img-5.jpg" alt="Event 5" />
+            <img src={gallery5} alt="Event 5" />
           </div>
           <div className="gallery-item">
-            <img src="/src//assets/img/gallery/img-6.jpg" alt="Event 6" />
+            <img src={gallery6} alt="Event 6" />
           </div>
 
           {/* Hidden on small screens */}
           <div className="gallery-item d-none d-sm-none d-md-none d-lg-block">
-            <img src="/src//assets/img/gallery/img-7.jpg" alt="Event 7" />
+            <img src={gallery7} alt="Event 7" />
           </div>
           <div className="gallery-item d-none d-sm-none d-md-none d-lg-block">
-            <img src="/src//assets/img/gallery/img-8.jpg" alt="Event 8" />
+            <img src={gallery8} alt="Event 8" />
           </div>
         </div>
 
@@ -2051,7 +2091,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
                     <div className="swiper-slide">
                       <div className="blog-card">
                         <div className="thumb">
-                          <a href='/econest/blog-details'><img alt="thumb-5" src="/src/assets/img/event-1.jpg" /></a>
+                          <a href='/econest/blog-details'><img alt="thumb-5" src={event1} /></a>
                           {/* <!-- <div className="category">
                             <a href='/econest/blog-details'>Forest</a>
                           </div> --> */}
@@ -2090,7 +2130,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
                     <div className="swiper-slide">
                       <div className="blog-card">
                         <div className="thumb">
-                          <a href='/econest/blog-details'><img alt="thumb-6" src="/src/assets/img/event-2.jpg" /></a>
+                          <a href='/econest/blog-details'><img alt="thumb-6" src={event2} /></a>
                           {/* <!-- <div className="category">
                             <a href='/econest/blog-details'>Recycle</a>
                           </div> --> */}
@@ -2129,7 +2169,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
                     <div className="swiper-slide">
                       <div className="blog-card">
                         <div className="thumb">
-                          <a href='/econest/blog-details'><img alt="thumb-5" src="/src/assets/img/event-1.jpg" /></a>
+                          <a href='/econest/blog-details'><img alt="thumb-5" src={event1} /></a>
                           {/* <!-- <div className="category">
                             <a href='/econest/blog-details'>Forest</a>
                           </div> --> */}
@@ -2168,7 +2208,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
                     <div className="swiper-slide">
                       <div className="blog-card">
                         <div className="thumb">
-                          <a href='/econest/blog-details'><img alt="thumb-6" src="/src/assets/img/event-2.jpg" /></a>
+                          <a href='/econest/blog-details'><img alt="thumb-6" src={event2} /></a>
                           {/* <!-- <div className="category">
                             <a href='/econest/blog-details'>Recycle</a>
                           </div> --> */}
@@ -2212,12 +2252,12 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
           </div>
           {/* <!-- <div className="latest-blog-row-bottom" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <div className="row-bottom-thumb">
-              <div className="thumb"><img alt="thumb" src="assets/img/thumbs/thumb-84.webp" /></div>
+              <div className="thumb"><img alt="thumb" src={thumb84} /></div>
             </div>
             <div className="row row-gap-4 align-items-center">
               <div className="col-md-6 col-12">
                 <div className="common-title text-start">
-                  <h2>Get interesting <span><img alt="icon" src="assets/img/icons/icon-12.svg" /></span> news
+                  <h2>Get interesting <span><img alt="icon" src={icon12} /></span> news
                     <span><i className="fa-solid fa-arrow-right-long"></i></span></h2>
                 </div>
                 <p>Sign up to get the latest updates!</p>
@@ -2235,7 +2275,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
             </div>
           </div> --> */}
         </div>
-        {/* <!-- <div className="shape"><img alt="shape" src="assets/img/shapes/shape-38.webp" /></div> --> */}
+  {/* <!-- <div className="shape"><img alt="shape" src={shape38} /></div> --> */}
       </section>
 
       <footer className="footer-section footer-section-2 p-t-125 p-t-md-100 p-t-xs-30 p-b-50">
@@ -2247,7 +2287,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
                   <div className="footer-logo">
                     <a href="#">
                       <img
-                        src="/src/assets/img/thumbs/Annamalai_logo.jpg"
+                        src={footerLogo}
                         alt="logo"
                         width="90"
                       />
@@ -2290,7 +2330,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
               <div className="footer-widget">
                 <h3 className="w-title">
                   <span>
-                    <img src="/src/assets/img/icons/icon-1.svg" alt="icon" />
+                    <img src={icon1} alt="icon" />
                   </span>
                   Quick Links
                 </h3>
@@ -2308,7 +2348,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
               <div className="footer-widget">
                 <h3 className="w-title">
                   <span>
-                    <img src="/src/assets/img/icons/icon-1.svg" alt="icon" />
+                    <img src={icon1} alt="icon" />
                   </span>
                   Our Services
                 </h3>
@@ -2338,7 +2378,7 @@ Perumal’s father, Mr. Annamalai Chettiar (fondly called "Kannu"), was born as 
               <div className="footer-widget">
                 <h3 className="w-title">
                   <span>
-                    <img src="/src/assets/img/icons/icon-1.svg" alt="icon" />
+                    <img src={icon1} alt="icon" />
                   </span>
                   Get in Touch
                 </h3>
