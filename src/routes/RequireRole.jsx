@@ -11,7 +11,7 @@ export default function RequireRole({ role = [], children }) {
   console.log(user,'user dee');
   
   if (!user) {
-    return <Navigate to="/loginpage" state={{ from: location }} replace />;
+    return <Navigate to="/login" state={{ from: location }} replace />;
   }
 
   // If user has no roles OR does NOT match required role(s) → unauthorized

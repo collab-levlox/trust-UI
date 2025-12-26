@@ -36,7 +36,6 @@ export default function App() {
       <AuthProvider>
         <Routes>
           {/* <Route path="/" element={<MainLayout />}> */}
-
           <Route
             path="/home"
             element={
@@ -130,22 +129,22 @@ export default function App() {
 
           {/* Public-only pages (login/register) */}
 
-         {/* <Route
+         <Route
             path="login"
             element={
               <PublicRoute>
-                <Login />
+                <LoginPage />
               </PublicRoute>
             }
-          /> */}
-          {/* <Route
-            path="profile"
+          />
+          <Route
+            path="admin"
             element={
-              <RequireAuth role={["admin"]}>
+              <RequireAuth role={["ADMIN"]}>
                 <Profile />
               </RequireAuth>
             }
-          /> */}
+          />
 
           {/* <Route
             path="unauthorised"

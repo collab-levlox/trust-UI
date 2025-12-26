@@ -1,9 +1,13 @@
 
 import axios from "axios"
 
-const babaseulseurl = "http://localhost:8081/360-api/";
+const babaseulseurl = "http://localhost:8081/api/";
 axios.defaults.baseURL = babaseulseurl;
-axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem("token")}`;
+
+if (localStorage.getItem('token')) {
+    axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('token')}`;
+}
+
 
 
 export const loginAPI = async (payload) => {
@@ -92,5 +96,35 @@ export const bookingSlotList = async (payload) => {
         return response.data;
     } catch (error) {
         throw error.response.data
+    }
+}
+
+export const uploadMediaAPI = async (formData) => {
+    try {
+        const response = await axios.post("media/upload", formData, {
+            headers: { 'Content-Type': 'multipart/form-data' },
+        });
+        return response.data;
+    } catch (error) {
+        throw error.response?.data || error;
+    }
+}
+
+export const mediaListAPI = async (params) => {
+    try {
+        const response = await axios.get("media/list", { params });
+        return response.data;
+    } catch (error) {
+        throw error.response?.data || error;
+    }
+}
+
+export const deleteMediaAPI = async (params) => {
+    try {
+        // expects params like { id } or { key }
+        const response = await axios.delete("media/delete", { params });
+        return response.data;
+    } catch (error) {
+        throw error.response?.data || error;
     }
 }

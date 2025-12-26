@@ -26,9 +26,10 @@ export default function AuthProvider({ children }) {
       let responce = await loginAPI(credentials);
 
       if (responce?.data) {
-        setUser(responce?.data.user);
-        setToken(responce?.data.token);
-        localStorage.setItem("auth", JSON.stringify({ user: responce.data.user, token: responce.data.token }));
+        setUser({ ...responce?.data.user, roles: "ADMIN" });
+        setToken(responce?.data?.token);
+        localStorage.setItem("token", responce.data?.token)
+        localStorage.setItem("auth", JSON.stringify({ user: { ...responce.data.user, roles: "ADMIN" }, token: responce.data?.token }));
       }
       return responce.data
 
@@ -44,6 +45,7 @@ export default function AuthProvider({ children }) {
   const logout = () => {
     setUser(null);
     setToken(null);
+    localStorage.clear();
     localStorage.removeItem("auth");
   };
 

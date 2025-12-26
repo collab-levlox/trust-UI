@@ -61,7 +61,7 @@ const Login = () => {
     });
 
     if (res) {
-      navigate("/admin")
+      window.location.href = "/admin";
     }
 
     setIsLoading(false);
